@@ -1,0 +1,28 @@
+body { background: #eeeeee; }
+
+.cities {
+	fill: #a1978b
+}
+
+.info { font-family: Georgia; font-size: 16px; position: absolute; top: 0px; right: 80px; width: 550px; }
+
+.states, .cities { width: 120px; display: inline-block; float: left;  padding: 5px; }
+.states { color: #9d2849; }
+.cities { color: #4f1631; }
+
+#statelist, #citylist { width: 420px; float: left; }
+
+.stateListener, .cityListener { display: inline-block;  padding: 5px; }
+.stateListener:hover, .cityListener:hover { background: #e4d1b4; }
+
+.state-boundary {
+  fill: none;
+  stroke: #fff;
+}
+
+.city-boundary {
+  fill: none;
+  stroke: #fff;
+  stroke-opacity: .25;
+  stroke-width: .5px;
+}
