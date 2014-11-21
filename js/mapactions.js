@@ -1,4 +1,9 @@
 jQuery(document).ready(function() {
+	//Animate the map and the legenda as they are being build
+	$('.main').fadeIn(1500, function() {
+		$('.info').slideDown("slow");
+	});
+
 	$.getJSON( "data/list.json", function(json) {
 		var statelist = []
 		, citylist = [];
@@ -9,7 +14,7 @@ jQuery(document).ready(function() {
 
 			setTimeout(function() {
 				$('path[data-state="' + obj_states.nombre + '"]').css("fill", "#9d2849");
-			}, 0);
+			}, 1000);
 		});
 
 		//Build items for cities and highlight cities on the map
@@ -18,7 +23,7 @@ jQuery(document).ready(function() {
 
 			setTimeout(function() {
 				$('path[data-city="' + obj_cities.nombre + '"][data-state="' + obj_cities.estado + '"]').css("fill", "#4f1631");
-			}, 0);
+			}, 1000);
 		});
 
 		//Put all states and cities in lists, and count

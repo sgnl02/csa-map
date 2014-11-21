@@ -9,8 +9,10 @@ var width = 1200,
 var projection = d3.geo.conicConformal()
     .rotate([102, 0])
 
-    .center([5, 22])
-    .scale(3050)
+    /* .center([5, 22]) */
+    .center([3, 23])
+    /* .scale(3050) */
+    .scale(2550)
 
     .parallels([17.5, 29.5])
     .translate([width / 2, height / 2]);
@@ -18,7 +20,10 @@ var projection = d3.geo.conicConformal()
 var path = d3.geo.path()
     .projection(projection);
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("body")
+		.append("div")
+		.attr("class", "main")
+		.append("svg")
     .attr("width", width)
     .attr("height", height);
 

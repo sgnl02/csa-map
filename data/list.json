@@ -30,5 +30,7 @@
 		, { "nombre": "Chihuahua", "fecha": "27-06-2014" }
 		, { "nombre": "Puebla", "fecha": "22-07-2014" }
 		, { "nombre": "Coahuila", "fecha": "20-08-2014" }
+		, { "nombre": "Sonora", "fecha": "07-09-2014" }
+		, { "nombre": "San Luis Potosí", "fecha": "10-09-2014" }
 	]
 }

@@ -3,9 +3,10 @@
 <head>
 	<title>"Circos sin animales"</title>
 	<meta charset="utf-8">	
-</head>
 
-<link rel="stylesheet" href="styles/main.css" name="main" type="text/css" />
+	<link rel="stylesheet" href="styles/main.css" name="main" type="text/css" />
+
+</head>
 
 <body>
 
@@ -15,11 +16,23 @@
 		<div><strong class="cities">Ciudades</strong> <span id="citylist"></span></div>
 </div>
 
-<script src="js/d3.min.js"></script>
-<script src="js/topojson.min.js"></script>
-<script src="js/drawmap.js"></script>
-<script src="js/jquery.min.js"></script>
-<script src="js/mapactions.js"></script>
+<script>
+// Download the sources async and in order:
+// https://www.igvita.com/2014/05/20/script-injected-async-scripts-considered-harmful/
+
+[
+	'js/jquery.min.js',
+	'js/d3.min.js',
+	'js/topojson.min.js',
+	'js/drawmap.js',
+	'js/mapactions.js'
+].forEach(function(src) {
+  var script = document.createElement('script');
+  script.src = src;
+  script.async = false;
+  document.head.appendChild(script);
+});
+</script>
 
 </body>
 </html>
