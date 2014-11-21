@@ -4,7 +4,7 @@ body { background: #eeeeee; }
 .main, .info { display: none; }
 
 .info { 
-	background: #bbbbbb;
+	background: #cccccc;
 	font-family: Georgia; 
 	font-size: 16px; 
 	position: absolute; 
@@ -14,7 +14,7 @@ body { background: #eeeeee; }
 	opacity: 0.8;
 	padding-left: 10px;
 	padding-right: 10px;
-	z-index: 50;
+	z-index: 60;
 }
 
 .states, .cities { width: 120px; display: inline-block; float: left;  padding: 5px; }

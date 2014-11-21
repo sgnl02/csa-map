@@ -1,7 +1,7 @@
 jQuery(document).ready(function() {
 	//Animate the map and the legenda as they are being build
 	$('.main').fadeIn(1500, function() {
-		$('.info').slideDown("slow");
+		$('.info').slideDown(500);
 	});
 
 	$.getJSON( "data/list.json", function(json) {
